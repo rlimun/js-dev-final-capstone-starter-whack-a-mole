@@ -1,9 +1,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="./src/styles.css">
+    <title>Whack-a-Monty-mole</title>
   </head>
   <body>
-    <h1></h1>
+    <h1 id="title">Whack-a-Monty-mole!</h1>
+    <audio id="audio" src="/assets/SuperMarioBros.mp3"></audio>
+    <audio id="whackAudio" src="/assets/smb3_bump.wav"></audio>
     <div>
       <div>
         <h2>Click start to play!</h2>
@@ -12,8 +15,11 @@
         <h2>score: <span id="score">0</span></h2>
       </div>
       <div>
-          <h2><span id="timer">0</span> seconds left.</h2>
+          <h2><span id="timer">0 seconds left.</span></h2>
       </div>
+    </div>
+    <div class="start">
+      <button id='start'>START</button>
     </div>
     <div class="grid">
       <div id="hole0" class="hole">
@@ -22,7 +28,34 @@
       <div id="hole1" class="hole">
         <div id="mole1" class="mole"></div>
       </div>
-      <!--TODO: Add the missing holes and moles. -->
+      
+      <div id="hole2" class="hole">
+        <div id="mole2" class="mole"></div>
+        </div>
+      
+      <div id="hole3" class="hole">
+        <div id="mole3" class="mole"></div>
+      </div>
+      
+      <div id="hole4" class="hole">
+        <div id="mole4" class="mole"></div>
+      </div>
+      
+      <div id="hole5" class="hole">
+        <div id="mole5" class="mole"></div>
+      </div>
+
+      <div id="hole6" class="hole">
+        <div id="mole6" class="mole"></div>
+      </div>
+      
+      <div id="hole7" class="hole">
+        <div id="mole7" class="mole"></div>
+      </div>
+      
+      <div id="hole8" class="hole">
+        <div id="mole8" class="mole"></div>
+      </div>
     </div>
     <script src="./src/index.js"></script>
   </body>
