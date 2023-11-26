@@ -12,11 +12,17 @@ let points = 0;
 let lastHole = null;
 let difficulty = "normal";
 
+/**
+ * Stops audio and resets audio time back to 0
+ */
 function stopAudio() {
   audio.pause();
   audio.currentTime = 0;
 }
 
+/**
+ * Plays audio only once during gameplay
+ */
 function playAudioOnce() {
   audio.play();
   audio.removeEventListener("canplay", playAudioOnce);
@@ -197,9 +203,7 @@ function clearScore() {
 }
 
 /**
- *
  * Updates the control board with the timer if time > 0
- *
  */
 function updateTimer() {
   if (time > 0) {
@@ -280,10 +284,10 @@ function stopGame() {
  */
 function startGame() {
   setEventListeners();
-  stopAudio();
-  audio.addEventListener("canplay", playAudioOnce);
+  stopAudio(); // Make sure audio is not playing before we start audio up
+  audio.addEventListener("canplay", playAudioOnce); 
   clearScore();
-  setDuration(15);
+  setDuration(15); // Set whatever duration you would like to play the game
   startTimer();
   showUp();
   return "game started";
