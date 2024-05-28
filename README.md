@@ -4,6 +4,8 @@ This is a simple whack-a-mole game that is super mario themed. It uses Javascrip
 
 As someone playing the game, the objective is to use the mario hammer to hit(click) Monty the mole, who appears at random from the holes, as quick as possible within the time limit.
 
+![game-screenshot](assets/whack_a_mole_screenshot.png)
+
 ## File and Stucture
 
 1. index.js - JS file containing game logic
