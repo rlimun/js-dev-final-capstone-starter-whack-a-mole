@@ -38,4 +38,8 @@ All customization would be set in the index.js.
 4. Try to score as many points as possible within the time limit!
 
 
+## Notes on the focus of this project:
+
+This is the first capstone project I completed after my first course in Chegg Skills - Web Development. A lot of the functions described what the function needed to do in the comments, and I wrote the code to complete those functions. This project focused on how to install packages via npm, how to write HTML, CSS, and JavaScript code, how to use event listeners and event handlers, and how to deploy a basic website with GitHub. It had its own assets with pictures of the mole, background, dirt mound, etc., but I decided to make it my own using Monty Mole from Super Mario. I also added Super Mario background music while you're playing the game.
+
 
